@@ -16,6 +16,7 @@ import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.ImageView;
 import android.app.Activity;
@@ -44,8 +45,13 @@ public class my_tarif extends AppCompatActivity {
         int width_1 = (int) width / 100;
         //отрисовка view_Ethernet
         View view_Ethernet = findViewById(R.id.view_Ethernet);
-        view_Ethernet.setLayoutParams(new LinearLayout.LayoutParams(width_1 * 90, height_1 * 40));
-        view_Ethernet.setX(width_1 * 6);
+
+        RelativeLayout.LayoutParams params2 = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT,
+                RelativeLayout.LayoutParams.WRAP_CONTENT);
+        params2.addRule(RelativeLayout.CENTER_HORIZONTAL);
+        params2.height=height_1 * 40;
+        //params2.addRule(LayoutParams(width_1 * 90, height_1 * 40));
+        view_Ethernet.setLayoutParams(params2);
         view_Ethernet.setY(height_1 * 5);
         //отрисовка заголовка Ethernet
         TextView TextView_Ethernet_Zagolovok = findViewById(R.id.textView_Ethernet);

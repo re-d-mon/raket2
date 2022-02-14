@@ -10,9 +10,13 @@
     <View
         android:id="@+id/view_Ethernet"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="360dp"
+
         android:background="@drawable/rectangl"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toBottomOf="@+id/view_White"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
     <View
         android:id="@+id/viewmenu_tarif"
         android:layout_width="0dp"

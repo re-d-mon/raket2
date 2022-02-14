@@ -3,4 +3,9 @@
     <string name="Ethernet">Интернет</string>
     <string name="pay">ОПЛАТА</string>
     <string name="pay2">Выберите способ оплаты</string>
+    <string name="No_Authorization">Не верный логин ли пароль</string>
+    <string name="Contract_Number">Номер договора</string>
+    <string name="login_and_pass">Логин и пароль указан на последней странице  вашего договора</string>
+    <string name="Enter">Войти</string>
+    <string name="Password">Пароль</string>
 </resources>

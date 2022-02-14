@@ -5,20 +5,14 @@ import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
 import android.text.Html;
 
-import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
-import android.view.WindowId;
-import android.widget.EditText;
+import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.ImageView;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
@@ -26,15 +20,15 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.Socket;
 
-import javax.security.auth.login.LoginException;
-
-public class MainActivity<MyActivity> extends AppCompatActivity {
+public class authorization<MyActivity> extends AppCompatActivity {
     String d;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_authorization);
 //Отрисовка
         TextView arg = findViewById(R.id.arg);
 
@@ -45,7 +39,7 @@ public class MainActivity<MyActivity> extends AppCompatActivity {
 
         ImageView Logo = findViewById(R.id.Logo);
         Button authorization = findViewById(R.id.authorization);
-        View view2 = findViewById(R.id.view);
+
         TextView Login_TextView = findViewById(R.id.Login);
         TextView Password_TextView = findViewById(R.id.Password);
         TextView editTextTextPersonName2 = findViewById(R.id.editTextTextPersonName2);
@@ -56,29 +50,12 @@ public class MainActivity<MyActivity> extends AppCompatActivity {
             @Override
             public void onFocusChange(View view, boolean b) {
                 String sss = String.valueOf(Login_TextView.getText());
-                int View_Y = (int) view2.getY();
-                int logo_Y = (int) logo.getY();
-                int Login_TextView_Y = (int) Login_TextView.getY();
-                int Password_TextView_Y = (int) Password_TextView.getY();
-                int textView3_Y = (int) textView3.getY();
-                int authorization_Y = (int) authorization.getY();
                 if (b == true) {
-                    logo.setY(logo_Y - 350);
-                    view2.setY(View_Y - 350);
-                    Login_TextView.setY(Login_TextView_Y - 350);
-                    Password_TextView.setY(Password_TextView_Y - 350);
-                    textView3.setY(textView3_Y - 350);
-                    authorization.setY(authorization_Y - 350);
+
                     if (sss.equals("Номер договора")) {
                         Login_TextView.setText("");
                     }
                 } else {
-                    logo.setY(logo_Y + 350);
-                    view2.setY(View_Y + 350);
-                    Login_TextView.setY(Login_TextView_Y + 350);
-                    Password_TextView.setY(Password_TextView_Y + 350);
-                    textView3.setY(textView3_Y + 350);
-                    authorization.setY(authorization_Y + 350);
                     if (sss.equals("")) {
                         Login_TextView.setText("Номер договора");
                     }
@@ -91,33 +68,11 @@ public class MainActivity<MyActivity> extends AppCompatActivity {
             public void onFocusChange(View view, boolean b) {
                 Password_TextView.hasFocus();
                 String sss = String.valueOf(Password_TextView.getText());
-                int View_Y = (int) view2.getY();
-                int logo_Y = (int) logo.getY();
-                int Login_TextView_Y = (int) Login_TextView.getY();
-                int Password_TextView_Y = (int) Password_TextView.getY();
-                int textView3_Y = (int) textView3.getY();
-                int authorization_Y = (int) authorization.getY();
                 if (b == true) {
-                    logo.setY(logo_Y - 350);
-                    logo_Y = (int) logo.getY();
-                    view2.setY(View_Y - 350);
-                    Login_TextView.setY(Login_TextView_Y - 350);
-                    Password_TextView.setY(Password_TextView_Y - 350);
-                    textView3.setY(textView3_Y - 350);
-                    authorization.setY(authorization_Y - 350);
-
                     if (sss.equals("Пароль")) {
                         Password_TextView.setText("");
                     }
                 } else {
-                    logo.setY(logo_Y + 350);
-                    logo_Y = (int) logo.getY();
-                    view2.setY(View_Y + 350);
-                    Login_TextView.setY(Login_TextView_Y + 350);
-                    Password_TextView.setY(Password_TextView_Y + 350);
-                    textView3.setY(textView3_Y + 350);
-                    authorization.setY(authorization_Y + 350);
-
                     if (sss.equals("")) {
                         Password_TextView.setText("Пароль");
                     }
