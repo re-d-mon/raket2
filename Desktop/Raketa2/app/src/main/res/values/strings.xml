@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Raketa</string>
+    <string name="Ethernet">Интернет</string>
+    <string name="pay">ОПЛАТА</string>
+    <string name="pay2">Выберите способ оплаты</string>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".my_tarif">
+
+    <View
+        android:id="@+id/view_Ethernet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangl"
+        tools:ignore="MissingConstraints" />
+    <View
+        android:id="@+id/viewmenu_tarif"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/separator2"
+        android:nestedScrollingEnabled="false"
+
+        android:outlineProvider="bounds"
+
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView_Ethernet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoSizeMaxTextSize="30pt"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/centurygothic"
+        android:text="@string/Ethernet"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view_White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangl_white"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView_tariff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoSizeMaxTextSize="30pt"
+        android:autoSizeTextType="uniform"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textView_summa_tarifa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoSizeMaxTextSize="30pt"
+        android:autoSizeTextType="uniform"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/textView_summa_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoSizeMaxTextSize="30pt"
+        android:autoSizeTextType="uniform"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/textView_MESYC_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoSizeMaxTextSize="30pt"
+        android:autoSizeTextType="uniform"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/textView_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoSizeMaxTextSize="30pt"
+        android:autoSizeTextType="uniform"
+        android:textColor="@color/grey"
+        android:lines="1"/>
+
+    <TextView
+        android:id="@+id/textView_Glavnay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:autoSizeMaxTextSize="30pt"
+        android:onClick="glavnay"
+        android:autoSizeTextType="uniform"
+        android:text="Главная" />
+
+    <TextView
+        android:id="@+id/textView_yvedomleniy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:autoSizeMaxTextSize="30pt"
+        android:autoSizeTextType="uniform"
+        android:text="Уведомления" />
+
+    <TextView
+        android:id="@+id/textView_tarif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="152dp"
+        android:autoSizeMaxTextSize="30pt"
+        android:autoSizeTextType="uniform"
+        android:enabled="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Мой тариф"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

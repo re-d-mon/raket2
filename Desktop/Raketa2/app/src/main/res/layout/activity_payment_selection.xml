@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".payment_selection">
+
+    <TextView
+        android:id="@+id/textView_Pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoSizeMaxTextSize="30pt"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/centurygothic"
+        android:gravity="center"
+        android:text="@string/pay"
+        android:textColor="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView_Pay_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoSizeMaxTextSize="30pt"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/centurygothic"
+        android:gravity="center"
+        android:text="@string/pay2"
+        android:textColor="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imagePay"
+        android:layout_width="78dp"
+        android:layout_height="73dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/pay"
+        tools:layout_editor_absoluteX="297dp"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/viewmenu_tarif"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/separator2"
+        android:nestedScrollingEnabled="false"
+
+        android:outlineProvider="bounds"
+
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView_Glavnay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:autoSizeMaxTextSize="30pt"
+        android:autoSizeTextType="uniform"
+        android:text="Главная"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView_yvedomleniy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:autoSizeMaxTextSize="30pt"
+        android:autoSizeTextType="uniform"
+        android:text="Уведомления"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView_tarif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="152dp"
+        android:autoSizeMaxTextSize="30pt"
+        android:autoSizeTextType="uniform"
+        android:enabled="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Мой тариф"
+        tools:ignore="MissingConstraints" />
+    <!--отрисовка фона кнопок-->
+    <View
+        android:id="@+id/Pay_cards"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_oplata"
+        android:nestedScrollingEnabled="false"
+
+        android:outlineProvider="bounds"
+
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/Pay_cards_spefical"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_oplata"
+        android:nestedScrollingEnabled="false"
+
+        android:outlineProvider="bounds"
+
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

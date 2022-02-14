@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    tools:context=".Home">
+
+    <ImageView
+        android:id="@+id/rectangle"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        app:srcCompat="@drawable/rectangle" />
+
+    <ImageView
+        android:id="@+id/imageButton"
+        android:layout_width="78dp"
+        android:layout_height="73dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/wallet"
+        tools:layout_editor_absoluteX="297dp" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/separator"
+        android:nestedScrollingEnabled="false"
+        android:outlineProvider="bounds"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/viewmenu"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/separator2"
+        android:nestedScrollingEnabled="false"
+
+        android:outlineProvider="bounds"
+
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="682dp" />
+
+    <TextView
+        android:id="@+id/reklama"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:background="#F2F2F2"
+        android:gravity="center"
+        android:text="Уважаемые клиенты! С 01.02.2022 произойдет увеличение стоимости по тарифам на услуги доступа в Интернет, W-Fi, предоставления статических IP-адресов и других услуг связи, предоставляемых компанией по договорам услуг. Более подробную информацию Вы можете получить в офисе компании или по телефону +7 (3955) 50-00-50."
+        android:textColor="#7B7D80"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Zagalovok_reklami"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:background="#F2F2F2"
+        android:gravity="center"
+        android:text="Изменение стоимости услуг связи"
+        android:textColor="#535050"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/Фио"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:text="ФИО"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <TextView
+        android:id="@+id/textView_dogovor"
+        android:layout_width="195dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="12dp"
+        android:text="№"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Фио" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:text="Баланс"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <TextView
+        android:id="@+id/textView_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:autoSizeMaxTextSize="30pt"
+        android:autoSizeTextType="uniform"
+        android:singleLine="true"
+
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_Glavnay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:autoSizeMaxTextSize="30pt"
+        android:autoSizeTextType="uniform"
+        android:text="Главная" />
+
+    <TextView
+        android:id="@+id/textView_yvedomleniy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:autoSizeMaxTextSize="30pt"
+        android:autoSizeTextType="uniform"
+        android:text="Уведомления" />
+
+    <TextView
+        android:id="@+id/textView_tarif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="152dp"
+        android:autoSizeMaxTextSize="30pt"
+        android:autoSizeTextType="uniform"
+        android:enabled="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Мой тариф" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
